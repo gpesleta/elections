@@ -1,0 +1,2829 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0415.1946                               -->
+<workbook source-build='2020.2.0 (20202.20.0415.1946)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SpatialFileLayer />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='ph_regions' inline='true' name='federated.0apmjz01xx0gj812s5ymf01s0l6d' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ph_regions' name='ogrdirect.11t43ji01f0ajd1h33ihq1ngait9'>
+            <connection class='ogrdirect' directory='C:/Users/George Allan Esleta/Documents/GitHub/elections/Datasets' filename='ph_regions.shp' ogr-grid-shift-folder='C:\Program Files\Tableau\Tableau 2020.2\local\proj4' password='' server='' tablename='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='ogrdirect.11t43ji01f0ajd1h33ihq1ngait9' name='ph_regions.shp' table='[ph_regions.shp]' type='table'>
+          <columns>
+            <column datatype='integer' name='region_num' ordinal='0' />
+            <column datatype='string' name='region' ordinal='1' />
+            <column datatype='spatial' name='Geometry' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='ogrdirect.11t43ji01f0ajd1h33ihq1ngait9' name='ph_regions.shp' table='[ph_regions.shp]' type='table'>
+          <columns>
+            <column datatype='integer' name='region_num' ordinal='0' />
+            <column datatype='string' name='region' ordinal='1' />
+            <column datatype='spatial' name='Geometry' ordinal='2' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>region_num</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[region_num]</local-name>
+            <parent-name>[ph_regions.shp]</parent-name>
+            <remote-alias>region_num</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_regions.shp_A7796E4579C94433A269E52F636442EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[region]</local-name>
+            <parent-name>[ph_regions.shp]</parent-name>
+            <remote-alias>region</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_regions.shp_A7796E4579C94433A269E52F636442EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geometry</remote-name>
+            <remote-type>8</remote-type>
+            <local-name>[Geometry]</local-name>
+            <parent-name>[ph_regions.shp]</parent-name>
+            <remote-alias>Geometry</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Collect</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_regions.shp_A7796E4579C94433A269E52F636442EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='ph_regions.shp' datatype='table' name='[__tableau_internal_object_id__].[ph_regions.shp_A7796E4579C94433A269E52F636442EE]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[region_num]' role='dimension' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Philippines&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='ph_regions.shp' id='ph_regions.shp_A7796E4579C94433A269E52F636442EE'>
+            <properties context=''>
+              <relation connection='ogrdirect.11t43ji01f0ajd1h33ihq1ngait9' name='ph_regions.shp' table='[ph_regions.shp]' type='table'>
+                <columns>
+                  <column datatype='integer' name='region_num' ordinal='0' />
+                  <column datatype='string' name='region' ordinal='1' />
+                  <column datatype='spatial' name='Geometry' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='ph_province' inline='true' name='federated.1hislj715q56so18ny7860e4p9ol' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ph_provinces' name='ogrdirect.0zpr5xa0r3icus12uhwer06pqkh7'>
+            <connection class='ogrdirect' directory='C:/Users/George Allan Esleta/Documents/GitHub/elections/Datasets' filename='ph_provinces.shp' ogr-grid-shift-folder='C:\Program Files\Tableau\Tableau 2020.2\local\proj4' password='' server='' tablename='' />
+          </named-connection>
+          <named-connection caption='results_president_denormalized' name='textscan.0uwobjp094jo7t1e8nng31d8ilkd'>
+            <connection class='textscan' directory='C:/Users/George Allan Esleta/Documents/GitHub/elections/Datasets' filename='results_president_denormalized.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='ogrdirect.0zpr5xa0r3icus12uhwer06pqkh7' name='ph_provinces.shp' table='[ph_provinces.shp]' type='table'>
+          <columns>
+            <column datatype='integer' name='ID_0' ordinal='0' />
+            <column datatype='string' name='ISO' ordinal='1' />
+            <column datatype='string' name='NAME_0' ordinal='2' />
+            <column datatype='integer' name='ID_1' ordinal='3' />
+            <column datatype='string' name='NAME_1' ordinal='4' />
+            <column datatype='string' name='NL_NAME_1' ordinal='5' />
+            <column datatype='string' name='VARNAME_1' ordinal='6' />
+            <column datatype='string' name='TYPE_1' ordinal='7' />
+            <column datatype='string' name='ENGTYPE_1' ordinal='8' />
+            <column datatype='string' name='province' ordinal='9' />
+            <column datatype='string' name='REGION' ordinal='10' />
+            <column datatype='spatial' name='Geometry' ordinal='11' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='ogrdirect.0zpr5xa0r3icus12uhwer06pqkh7' name='ph_provinces.shp' table='[ph_provinces.shp]' type='table'>
+          <columns>
+            <column datatype='integer' name='ID_0' ordinal='0' />
+            <column datatype='string' name='ISO' ordinal='1' />
+            <column datatype='string' name='NAME_0' ordinal='2' />
+            <column datatype='integer' name='ID_1' ordinal='3' />
+            <column datatype='string' name='NAME_1' ordinal='4' />
+            <column datatype='string' name='NL_NAME_1' ordinal='5' />
+            <column datatype='string' name='VARNAME_1' ordinal='6' />
+            <column datatype='string' name='TYPE_1' ordinal='7' />
+            <column datatype='string' name='ENGTYPE_1' ordinal='8' />
+            <column datatype='string' name='province' ordinal='9' />
+            <column datatype='string' name='REGION' ordinal='10' />
+            <column datatype='spatial' name='Geometry' ordinal='11' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>ID_0</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID_0]</local-name>
+            <parent-name>[ph_provinces.shp]</parent-name>
+            <remote-alias>ID_0</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_provinces.shp_D4FFD6B791584A39B8AE8C2FC9B9844C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ISO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ISO]</local-name>
+            <parent-name>[ph_provinces.shp]</parent-name>
+            <remote-alias>ISO</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_provinces.shp_D4FFD6B791584A39B8AE8C2FC9B9844C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME_0</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME_0]</local-name>
+            <parent-name>[ph_provinces.shp]</parent-name>
+            <remote-alias>NAME_0</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_provinces.shp_D4FFD6B791584A39B8AE8C2FC9B9844C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID_1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID_1]</local-name>
+            <parent-name>[ph_provinces.shp]</parent-name>
+            <remote-alias>ID_1</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_provinces.shp_D4FFD6B791584A39B8AE8C2FC9B9844C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME_1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME_1]</local-name>
+            <parent-name>[ph_provinces.shp]</parent-name>
+            <remote-alias>NAME_1</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_provinces.shp_D4FFD6B791584A39B8AE8C2FC9B9844C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NL_NAME_1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NL_NAME_1]</local-name>
+            <parent-name>[ph_provinces.shp]</parent-name>
+            <remote-alias>NL_NAME_1</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_provinces.shp_D4FFD6B791584A39B8AE8C2FC9B9844C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VARNAME_1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[VARNAME_1]</local-name>
+            <parent-name>[ph_provinces.shp]</parent-name>
+            <remote-alias>VARNAME_1</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_provinces.shp_D4FFD6B791584A39B8AE8C2FC9B9844C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TYPE_1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TYPE_1]</local-name>
+            <parent-name>[ph_provinces.shp]</parent-name>
+            <remote-alias>TYPE_1</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_provinces.shp_D4FFD6B791584A39B8AE8C2FC9B9844C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ENGTYPE_1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ENGTYPE_1]</local-name>
+            <parent-name>[ph_provinces.shp]</parent-name>
+            <remote-alias>ENGTYPE_1</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_provinces.shp_D4FFD6B791584A39B8AE8C2FC9B9844C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>province</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[province]</local-name>
+            <parent-name>[ph_provinces.shp]</parent-name>
+            <remote-alias>province</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_provinces.shp_D4FFD6B791584A39B8AE8C2FC9B9844C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REGION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[REGION]</local-name>
+            <parent-name>[ph_provinces.shp]</parent-name>
+            <remote-alias>REGION</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_provinces.shp_D4FFD6B791584A39B8AE8C2FC9B9844C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geometry</remote-name>
+            <remote-type>8</remote-type>
+            <local-name>[Geometry]</local-name>
+            <parent-name>[ph_provinces.shp]</parent-name>
+            <remote-alias>Geometry</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Collect</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_provinces.shp_D4FFD6B791584A39B8AE8C2FC9B9844C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[ID_0]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[ID_1]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='ph_provinces.shp' datatype='table' name='[__tableau_internal_object_id__].[ph_provinces.shp_D4FFD6B791584A39B8AE8C2FC9B9844C]' role='measure' type='quantitative' />
+      <column datatype='string' name='[province]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Philippines&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='ph_provinces.shp' id='ph_provinces.shp_D4FFD6B791584A39B8AE8C2FC9B9844C'>
+            <properties context=''>
+              <relation connection='ogrdirect.0zpr5xa0r3icus12uhwer06pqkh7' name='ph_provinces.shp' table='[ph_provinces.shp]' type='table'>
+                <columns>
+                  <column datatype='integer' name='ID_0' ordinal='0' />
+                  <column datatype='string' name='ISO' ordinal='1' />
+                  <column datatype='string' name='NAME_0' ordinal='2' />
+                  <column datatype='integer' name='ID_1' ordinal='3' />
+                  <column datatype='string' name='NAME_1' ordinal='4' />
+                  <column datatype='string' name='NL_NAME_1' ordinal='5' />
+                  <column datatype='string' name='VARNAME_1' ordinal='6' />
+                  <column datatype='string' name='TYPE_1' ordinal='7' />
+                  <column datatype='string' name='ENGTYPE_1' ordinal='8' />
+                  <column datatype='string' name='province' ordinal='9' />
+                  <column datatype='string' name='REGION' ordinal='10' />
+                  <column datatype='spatial' name='Geometry' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='results_president_denormalized' inline='true' name='federated.1arys4y1a7y9p518rfqon0ftpbqt' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='results_president_denormalized' name='textscan.1msy3s316u4vw711hus4u0suovqc'>
+            <connection class='textscan' directory='C:/Users/George Allan Esleta/Documents/GitHub/elections/Datasets' filename='results_president_denormalized.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1msy3s316u4vw711hus4u0suovqc' name='results_president_denormalized.csv' table='[results_president_denormalized#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_PH' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='contest_code' ordinal='1' />
+            <column datatype='string' name='candidate_name' ordinal='2' />
+            <column datatype='integer' name='party_code' ordinal='3' />
+            <column datatype='integer' name='votes' ordinal='4' />
+            <column datatype='integer' name='col5' ordinal='5' />
+            <column datatype='integer' name='ballots_cast' ordinal='6' />
+            <column datatype='integer' name='col7' ordinal='7' />
+            <column datatype='integer' name='col8' ordinal='8' />
+            <column datatype='datetime' name='timestamp' ordinal='9' />
+            <column datatype='real' name='pct_votes' ordinal='10' />
+            <column datatype='string' name='region' ordinal='11' />
+            <column datatype='string' name='province' ordinal='12' />
+            <column datatype='string' name='municipality' ordinal='13' />
+            <column datatype='string' name='barangay' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1msy3s316u4vw711hus4u0suovqc' name='results_president_denormalized.csv' table='[results_president_denormalized#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_PH' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='contest_code' ordinal='1' />
+            <column datatype='string' name='candidate_name' ordinal='2' />
+            <column datatype='integer' name='party_code' ordinal='3' />
+            <column datatype='integer' name='votes' ordinal='4' />
+            <column datatype='integer' name='col5' ordinal='5' />
+            <column datatype='integer' name='ballots_cast' ordinal='6' />
+            <column datatype='integer' name='col7' ordinal='7' />
+            <column datatype='integer' name='col8' ordinal='8' />
+            <column datatype='datetime' name='timestamp' ordinal='9' />
+            <column datatype='real' name='pct_votes' ordinal='10' />
+            <column datatype='string' name='region' ordinal='11' />
+            <column datatype='string' name='province' ordinal='12' />
+            <column datatype='string' name='municipality' ordinal='13' />
+            <column datatype='string' name='barangay' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₱&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_PH&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_president_denormalized.csv_83163ECE951148A39ADF8C3E03ED29CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contest_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[contest_code]</local-name>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias>contest_code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_president_denormalized.csv_83163ECE951148A39ADF8C3E03ED29CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>candidate_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[candidate_name]</local-name>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias>candidate_name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_president_denormalized.csv_83163ECE951148A39ADF8C3E03ED29CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>party_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[party_code]</local-name>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias>party_code</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_president_denormalized.csv_83163ECE951148A39ADF8C3E03ED29CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>votes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[votes]</local-name>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias>votes</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_president_denormalized.csv_83163ECE951148A39ADF8C3E03ED29CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>col5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[col5]</local-name>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias>col5</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_president_denormalized.csv_83163ECE951148A39ADF8C3E03ED29CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ballots_cast</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ballots_cast]</local-name>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias>ballots_cast</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_president_denormalized.csv_83163ECE951148A39ADF8C3E03ED29CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>col7</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[col7]</local-name>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias>col7</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_president_denormalized.csv_83163ECE951148A39ADF8C3E03ED29CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>col8</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[col8]</local-name>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias>col8</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_president_denormalized.csv_83163ECE951148A39ADF8C3E03ED29CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timestamp</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[timestamp]</local-name>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias>timestamp</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_president_denormalized.csv_83163ECE951148A39ADF8C3E03ED29CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pct_votes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pct_votes]</local-name>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias>pct_votes</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_president_denormalized.csv_83163ECE951148A39ADF8C3E03ED29CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[region]</local-name>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias>region</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_president_denormalized.csv_83163ECE951148A39ADF8C3E03ED29CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>province</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[province]</local-name>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias>province</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_president_denormalized.csv_83163ECE951148A39ADF8C3E03ED29CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>municipality</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[municipality]</local-name>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias>municipality</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_president_denormalized.csv_83163ECE951148A39ADF8C3E03ED29CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>barangay</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[barangay]</local-name>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias>barangay</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_president_denormalized.csv_83163ECE951148A39ADF8C3E03ED29CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='results_president_denormalized.csv' datatype='table' name='[__tableau_internal_object_id__].[results_president_denormalized.csv_83163ECE951148A39ADF8C3E03ED29CB]' role='measure' type='quantitative' />
+      <column caption='Candidate Name' datatype='string' name='[candidate_name]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[contest_code]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[party_code]' role='dimension' type='ordinal' />
+      <column caption='Province' datatype='string' name='[province]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+      <column caption='Votes' datatype='integer' name='[votes]' role='measure' type='quantitative' />
+      <column-instance column='[province]' derivation='None' name='[none:province:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:province:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%many-values%</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Philippines&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='results_president_denormalized.csv' id='results_president_denormalized.csv_83163ECE951148A39ADF8C3E03ED29CB'>
+            <properties context=''>
+              <relation connection='textscan.1msy3s316u4vw711hus4u0suovqc' name='results_president_denormalized.csv' table='[results_president_denormalized#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_PH' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='contest_code' ordinal='1' />
+                  <column datatype='string' name='candidate_name' ordinal='2' />
+                  <column datatype='integer' name='party_code' ordinal='3' />
+                  <column datatype='integer' name='votes' ordinal='4' />
+                  <column datatype='integer' name='col5' ordinal='5' />
+                  <column datatype='integer' name='ballots_cast' ordinal='6' />
+                  <column datatype='integer' name='col7' ordinal='7' />
+                  <column datatype='integer' name='col8' ordinal='8' />
+                  <column datatype='datetime' name='timestamp' ordinal='9' />
+                  <column datatype='real' name='pct_votes' ordinal='10' />
+                  <column datatype='string' name='region' ordinal='11' />
+                  <column datatype='string' name='province' ordinal='12' />
+                  <column datatype='string' name='municipality' ordinal='13' />
+                  <column datatype='string' name='barangay' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='results_vice-president_denormalized' inline='true' name='federated.0bi9uee1gi3q6h1gzjjxb188vpeb' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='results_vice-president_denormalized' name='textscan.1gk6ach1511xfx1b5ei5g14u94bt'>
+            <connection class='textscan' directory='C:/Users/George Allan Esleta/Documents/GitHub/elections/Datasets' filename='results_vice-president_denormalized.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1gk6ach1511xfx1b5ei5g14u94bt' name='results_vice-president_denormalized.csv' table='[results_vice-president_denormalized#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_PH' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='contest_code' ordinal='1' />
+            <column datatype='string' name='candidate_name' ordinal='2' />
+            <column datatype='integer' name='party_code' ordinal='3' />
+            <column datatype='integer' name='votes' ordinal='4' />
+            <column datatype='integer' name='col5' ordinal='5' />
+            <column datatype='integer' name='ballots_cast' ordinal='6' />
+            <column datatype='integer' name='col7' ordinal='7' />
+            <column datatype='integer' name='col8' ordinal='8' />
+            <column datatype='datetime' name='timestamp' ordinal='9' />
+            <column datatype='real' name='pct_votes' ordinal='10' />
+            <column datatype='string' name='region' ordinal='11' />
+            <column datatype='string' name='province' ordinal='12' />
+            <column datatype='string' name='municipality' ordinal='13' />
+            <column datatype='string' name='barangay' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1gk6ach1511xfx1b5ei5g14u94bt' name='results_vice-president_denormalized.csv' table='[results_vice-president_denormalized#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_PH' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='contest_code' ordinal='1' />
+            <column datatype='string' name='candidate_name' ordinal='2' />
+            <column datatype='integer' name='party_code' ordinal='3' />
+            <column datatype='integer' name='votes' ordinal='4' />
+            <column datatype='integer' name='col5' ordinal='5' />
+            <column datatype='integer' name='ballots_cast' ordinal='6' />
+            <column datatype='integer' name='col7' ordinal='7' />
+            <column datatype='integer' name='col8' ordinal='8' />
+            <column datatype='datetime' name='timestamp' ordinal='9' />
+            <column datatype='real' name='pct_votes' ordinal='10' />
+            <column datatype='string' name='region' ordinal='11' />
+            <column datatype='string' name='province' ordinal='12' />
+            <column datatype='string' name='municipality' ordinal='13' />
+            <column datatype='string' name='barangay' ordinal='14' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[results_vice-president_denormalized.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₱&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_PH&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[results_vice-president_denormalized.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_vice-president_denormalized.csv_0776C841EA424CE08960A23A30665796]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contest_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[contest_code]</local-name>
+            <parent-name>[results_vice-president_denormalized.csv]</parent-name>
+            <remote-alias>contest_code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_vice-president_denormalized.csv_0776C841EA424CE08960A23A30665796]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>candidate_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[candidate_name]</local-name>
+            <parent-name>[results_vice-president_denormalized.csv]</parent-name>
+            <remote-alias>candidate_name</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_vice-president_denormalized.csv_0776C841EA424CE08960A23A30665796]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>party_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[party_code]</local-name>
+            <parent-name>[results_vice-president_denormalized.csv]</parent-name>
+            <remote-alias>party_code</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_vice-president_denormalized.csv_0776C841EA424CE08960A23A30665796]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>votes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[votes]</local-name>
+            <parent-name>[results_vice-president_denormalized.csv]</parent-name>
+            <remote-alias>votes</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_vice-president_denormalized.csv_0776C841EA424CE08960A23A30665796]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>col5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[col5]</local-name>
+            <parent-name>[results_vice-president_denormalized.csv]</parent-name>
+            <remote-alias>col5</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_vice-president_denormalized.csv_0776C841EA424CE08960A23A30665796]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ballots_cast</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ballots_cast]</local-name>
+            <parent-name>[results_vice-president_denormalized.csv]</parent-name>
+            <remote-alias>ballots_cast</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_vice-president_denormalized.csv_0776C841EA424CE08960A23A30665796]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>col7</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[col7]</local-name>
+            <parent-name>[results_vice-president_denormalized.csv]</parent-name>
+            <remote-alias>col7</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_vice-president_denormalized.csv_0776C841EA424CE08960A23A30665796]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>col8</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[col8]</local-name>
+            <parent-name>[results_vice-president_denormalized.csv]</parent-name>
+            <remote-alias>col8</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_vice-president_denormalized.csv_0776C841EA424CE08960A23A30665796]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timestamp</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[timestamp]</local-name>
+            <parent-name>[results_vice-president_denormalized.csv]</parent-name>
+            <remote-alias>timestamp</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_vice-president_denormalized.csv_0776C841EA424CE08960A23A30665796]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pct_votes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pct_votes]</local-name>
+            <parent-name>[results_vice-president_denormalized.csv]</parent-name>
+            <remote-alias>pct_votes</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_vice-president_denormalized.csv_0776C841EA424CE08960A23A30665796]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[region]</local-name>
+            <parent-name>[results_vice-president_denormalized.csv]</parent-name>
+            <remote-alias>region</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_vice-president_denormalized.csv_0776C841EA424CE08960A23A30665796]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>province</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[province]</local-name>
+            <parent-name>[results_vice-president_denormalized.csv]</parent-name>
+            <remote-alias>province</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_vice-president_denormalized.csv_0776C841EA424CE08960A23A30665796]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>municipality</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[municipality]</local-name>
+            <parent-name>[results_vice-president_denormalized.csv]</parent-name>
+            <remote-alias>municipality</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_vice-president_denormalized.csv_0776C841EA424CE08960A23A30665796]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>barangay</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[barangay]</local-name>
+            <parent-name>[results_vice-president_denormalized.csv]</parent-name>
+            <remote-alias>barangay</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_vice-president_denormalized.csv_0776C841EA424CE08960A23A30665796]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='results_vice-president_denormalized.csv' datatype='table' name='[__tableau_internal_object_id__].[results_vice-president_denormalized.csv_0776C841EA424CE08960A23A30665796]' role='measure' type='quantitative' />
+      <column caption='Candidate Name' datatype='string' name='[candidate_name]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[contest_code]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[party_code]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[province]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+      <column caption='Votes' datatype='integer' name='[votes]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Philippines&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='results_vice-president_denormalized.csv' id='results_vice-president_denormalized.csv_0776C841EA424CE08960A23A30665796'>
+            <properties context=''>
+              <relation connection='textscan.1gk6ach1511xfx1b5ei5g14u94bt' name='results_vice-president_denormalized.csv' table='[results_vice-president_denormalized#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_PH' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='contest_code' ordinal='1' />
+                  <column datatype='string' name='candidate_name' ordinal='2' />
+                  <column datatype='integer' name='party_code' ordinal='3' />
+                  <column datatype='integer' name='votes' ordinal='4' />
+                  <column datatype='integer' name='col5' ordinal='5' />
+                  <column datatype='integer' name='ballots_cast' ordinal='6' />
+                  <column datatype='integer' name='col7' ordinal='7' />
+                  <column datatype='integer' name='col8' ordinal='8' />
+                  <column datatype='datetime' name='timestamp' ordinal='9' />
+                  <column datatype='real' name='pct_votes' ordinal='10' />
+                  <column datatype='string' name='region' ordinal='11' />
+                  <column datatype='string' name='province' ordinal='12' />
+                  <column datatype='string' name='municipality' ordinal='13' />
+                  <column datatype='string' name='barangay' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='Ranking_President' inline='true' name='federated.0x9jihg1wlalcq0zin0pj0vn5lx4' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='ph_provinces' name='ogrdirect.1djaxz004pjoid0zoiey803058uo'>
+            <connection class='ogrdirect' directory='C:/Users/George Allan Esleta/Documents/GitHub/elections/Datasets' filename='ph_provinces.shp' ogr-grid-shift-folder='C:\Program Files\Tableau\Tableau 2020.2\local\proj4' password='' server='' tablename='' />
+          </named-connection>
+          <named-connection caption='results_president_denormalized' name='textscan.1n0cbtv1bsvoah1bcxhz11ls1lx8'>
+            <connection class='textscan' directory='C:/Users/George Allan Esleta/Documents/GitHub/elections/Datasets' filename='results_president_denormalized.csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='results_president_province_top' name='textscan.0s9fvo21gfc0181ak3wjm1qk4jsr'>
+            <connection class='textscan' directory='C:/Users/George Allan Esleta/Documents/GitHub/elections/Datasets' filename='results_president_province_top.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation join='right' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[ph_provinces.shp].[province]' />
+              <expression op='[results_president_province_top.csv].[province]' />
+            </expression>
+          </clause>
+          <relation connection='ogrdirect.1djaxz004pjoid0zoiey803058uo' name='ph_provinces.shp' table='[ph_provinces.shp]' type='table'>
+            <columns>
+              <column datatype='integer' name='ID_0' ordinal='0' />
+              <column datatype='string' name='ISO' ordinal='1' />
+              <column datatype='string' name='NAME_0' ordinal='2' />
+              <column datatype='integer' name='ID_1' ordinal='3' />
+              <column datatype='string' name='NAME_1' ordinal='4' />
+              <column datatype='string' name='NL_NAME_1' ordinal='5' />
+              <column datatype='string' name='VARNAME_1' ordinal='6' />
+              <column datatype='string' name='TYPE_1' ordinal='7' />
+              <column datatype='string' name='ENGTYPE_1' ordinal='8' />
+              <column datatype='string' name='province' ordinal='9' />
+              <column datatype='string' name='REGION' ordinal='10' />
+              <column datatype='spatial' name='Geometry' ordinal='11' />
+            </columns>
+          </relation>
+          <relation connection='textscan.0s9fvo21gfc0181ak3wjm1qk4jsr' name='results_president_province_top.csv' table='[results_president_province_top#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_PH' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='string' name='province' ordinal='1' />
+              <column datatype='string' name='candidate_name' ordinal='2' />
+              <column datatype='integer' name='votes' ordinal='3' />
+              <column datatype='real' name='rank' ordinal='4' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
+          <relation join='right' type='join'>
+            <clause type='join'>
+              <expression op='='>
+                <expression op='[ph_provinces.shp].[province]' />
+                <expression op='[results_president_province_top.csv].[province]' />
+              </expression>
+            </clause>
+            <relation connection='ogrdirect.1djaxz004pjoid0zoiey803058uo' name='ph_provinces.shp' table='[ph_provinces.shp]' type='table'>
+              <columns>
+                <column datatype='integer' name='ID_0' ordinal='0' />
+                <column datatype='string' name='ISO' ordinal='1' />
+                <column datatype='string' name='NAME_0' ordinal='2' />
+                <column datatype='integer' name='ID_1' ordinal='3' />
+                <column datatype='string' name='NAME_1' ordinal='4' />
+                <column datatype='string' name='NL_NAME_1' ordinal='5' />
+                <column datatype='string' name='VARNAME_1' ordinal='6' />
+                <column datatype='string' name='TYPE_1' ordinal='7' />
+                <column datatype='string' name='ENGTYPE_1' ordinal='8' />
+                <column datatype='string' name='province' ordinal='9' />
+                <column datatype='string' name='REGION' ordinal='10' />
+                <column datatype='spatial' name='Geometry' ordinal='11' />
+              </columns>
+            </relation>
+            <relation connection='textscan.0s9fvo21gfc0181ak3wjm1qk4jsr' name='results_president_province_top.csv' table='[results_president_province_top#csv]' type='table'>
+              <columns character-set='UTF-8' header='yes' locale='en_PH' separator=','>
+                <column datatype='integer' name='F1' ordinal='0' />
+                <column datatype='string' name='province' ordinal='1' />
+                <column datatype='string' name='candidate_name' ordinal='2' />
+                <column datatype='integer' name='votes' ordinal='3' />
+                <column datatype='real' name='rank' ordinal='4' />
+              </columns>
+            </relation>
+          </relation>
+          <relation connection='textscan.1n0cbtv1bsvoah1bcxhz11ls1lx8' name='results_president_denormalized.csv' table='[results_president_denormalized#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='en_PH' separator=','>
+              <column datatype='integer' name='F1' ordinal='0' />
+              <column datatype='integer' name='contest_code' ordinal='1' />
+              <column datatype='string' name='candidate_name' ordinal='2' />
+              <column datatype='integer' name='party_code' ordinal='3' />
+              <column datatype='integer' name='votes' ordinal='4' />
+              <column datatype='integer' name='col5' ordinal='5' />
+              <column datatype='integer' name='ballots_cast' ordinal='6' />
+              <column datatype='integer' name='col7' ordinal='7' />
+              <column datatype='integer' name='col8' ordinal='8' />
+              <column datatype='datetime' name='timestamp' ordinal='9' />
+              <column datatype='real' name='pct_votes' ordinal='10' />
+              <column datatype='string' name='region' ordinal='11' />
+              <column datatype='string' name='province' ordinal='12' />
+              <column datatype='string' name='municipality' ordinal='13' />
+              <column datatype='string' name='barangay' ordinal='14' />
+            </columns>
+          </relation>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <cols>
+          <map key='[ENGTYPE_1]' value='[ph_provinces.shp].[ENGTYPE_1]' />
+          <map key='[F1 (results_president_denormalized.csv)]' value='[results_president_denormalized.csv].[F1]' />
+          <map key='[F1]' value='[results_president_province_top.csv].[F1]' />
+          <map key='[Geometry]' value='[ph_provinces.shp].[Geometry]' />
+          <map key='[ID_0]' value='[ph_provinces.shp].[ID_0]' />
+          <map key='[ID_1]' value='[ph_provinces.shp].[ID_1]' />
+          <map key='[ISO]' value='[ph_provinces.shp].[ISO]' />
+          <map key='[NAME_0]' value='[ph_provinces.shp].[NAME_0]' />
+          <map key='[NAME_1]' value='[ph_provinces.shp].[NAME_1]' />
+          <map key='[NL_NAME_1]' value='[ph_provinces.shp].[NL_NAME_1]' />
+          <map key='[REGION]' value='[ph_provinces.shp].[REGION]' />
+          <map key='[TYPE_1]' value='[ph_provinces.shp].[TYPE_1]' />
+          <map key='[VARNAME_1]' value='[ph_provinces.shp].[VARNAME_1]' />
+          <map key='[ballots_cast]' value='[results_president_denormalized.csv].[ballots_cast]' />
+          <map key='[barangay]' value='[results_president_denormalized.csv].[barangay]' />
+          <map key='[candidate_name (results_president_denormalized.csv)]' value='[results_president_denormalized.csv].[candidate_name]' />
+          <map key='[candidate_name]' value='[results_president_province_top.csv].[candidate_name]' />
+          <map key='[col5]' value='[results_president_denormalized.csv].[col5]' />
+          <map key='[col7]' value='[results_president_denormalized.csv].[col7]' />
+          <map key='[col8]' value='[results_president_denormalized.csv].[col8]' />
+          <map key='[contest_code]' value='[results_president_denormalized.csv].[contest_code]' />
+          <map key='[municipality]' value='[results_president_denormalized.csv].[municipality]' />
+          <map key='[party_code]' value='[results_president_denormalized.csv].[party_code]' />
+          <map key='[pct_votes]' value='[results_president_denormalized.csv].[pct_votes]' />
+          <map key='[province (results_president_denormalized.csv)]' value='[results_president_denormalized.csv].[province]' />
+          <map key='[province (results_president_province_top.csv)]' value='[results_president_province_top.csv].[province]' />
+          <map key='[province]' value='[ph_provinces.shp].[province]' />
+          <map key='[rank]' value='[results_president_province_top.csv].[rank]' />
+          <map key='[region]' value='[results_president_denormalized.csv].[region]' />
+          <map key='[timestamp]' value='[results_president_denormalized.csv].[timestamp]' />
+          <map key='[votes (results_president_denormalized.csv)]' value='[results_president_denormalized.csv].[votes]' />
+          <map key='[votes]' value='[results_president_province_top.csv].[votes]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[results_president_province_top.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₱&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_PH&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₱&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_PH&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID_0</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID_0]</local-name>
+            <parent-name>[ph_provinces.shp]</parent-name>
+            <remote-alias>ID_0</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_provinces.shp_D007E413F7D844659A3CE4C0CE8B8244]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ISO</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ISO]</local-name>
+            <parent-name>[ph_provinces.shp]</parent-name>
+            <remote-alias>ISO</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_provinces.shp_D007E413F7D844659A3CE4C0CE8B8244]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME_0</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME_0]</local-name>
+            <parent-name>[ph_provinces.shp]</parent-name>
+            <remote-alias>NAME_0</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_provinces.shp_D007E413F7D844659A3CE4C0CE8B8244]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID_1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID_1]</local-name>
+            <parent-name>[ph_provinces.shp]</parent-name>
+            <remote-alias>ID_1</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_provinces.shp_D007E413F7D844659A3CE4C0CE8B8244]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NAME_1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NAME_1]</local-name>
+            <parent-name>[ph_provinces.shp]</parent-name>
+            <remote-alias>NAME_1</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_provinces.shp_D007E413F7D844659A3CE4C0CE8B8244]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NL_NAME_1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NL_NAME_1]</local-name>
+            <parent-name>[ph_provinces.shp]</parent-name>
+            <remote-alias>NL_NAME_1</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_provinces.shp_D007E413F7D844659A3CE4C0CE8B8244]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VARNAME_1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[VARNAME_1]</local-name>
+            <parent-name>[ph_provinces.shp]</parent-name>
+            <remote-alias>VARNAME_1</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_provinces.shp_D007E413F7D844659A3CE4C0CE8B8244]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TYPE_1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TYPE_1]</local-name>
+            <parent-name>[ph_provinces.shp]</parent-name>
+            <remote-alias>TYPE_1</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_provinces.shp_D007E413F7D844659A3CE4C0CE8B8244]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ENGTYPE_1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ENGTYPE_1]</local-name>
+            <parent-name>[ph_provinces.shp]</parent-name>
+            <remote-alias>ENGTYPE_1</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_provinces.shp_D007E413F7D844659A3CE4C0CE8B8244]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>province</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[province]</local-name>
+            <parent-name>[ph_provinces.shp]</parent-name>
+            <remote-alias>province</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_provinces.shp_D007E413F7D844659A3CE4C0CE8B8244]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>REGION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[REGION]</local-name>
+            <parent-name>[ph_provinces.shp]</parent-name>
+            <remote-alias>REGION</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_provinces.shp_D007E413F7D844659A3CE4C0CE8B8244]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geometry</remote-name>
+            <remote-type>8</remote-type>
+            <local-name>[Geometry]</local-name>
+            <parent-name>[ph_provinces.shp]</parent-name>
+            <remote-alias>Geometry</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>spatial</local-type>
+            <aggregation>Collect</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_provinces.shp_D007E413F7D844659A3CE4C0CE8B8244]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[results_president_province_top.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_provinces.shp_D007E413F7D844659A3CE4C0CE8B8244]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>province</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[province (results_president_province_top.csv)]</local-name>
+            <parent-name>[results_president_province_top.csv]</parent-name>
+            <remote-alias>province</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_provinces.shp_D007E413F7D844659A3CE4C0CE8B8244]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>candidate_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[candidate_name]</local-name>
+            <parent-name>[results_president_province_top.csv]</parent-name>
+            <remote-alias>candidate_name</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_provinces.shp_D007E413F7D844659A3CE4C0CE8B8244]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>votes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[votes]</local-name>
+            <parent-name>[results_president_province_top.csv]</parent-name>
+            <remote-alias>votes</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_provinces.shp_D007E413F7D844659A3CE4C0CE8B8244]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rank</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rank]</local-name>
+            <parent-name>[results_president_province_top.csv]</parent-name>
+            <remote-alias>rank</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[ph_provinces.shp_D007E413F7D844659A3CE4C0CE8B8244]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1 (results_president_denormalized.csv)]</local-name>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_president_denormalized.csv_4BEE98C2AB6F4D7A8AF68C67C9672FBC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>contest_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[contest_code]</local-name>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias>contest_code</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_president_denormalized.csv_4BEE98C2AB6F4D7A8AF68C67C9672FBC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>candidate_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[candidate_name (results_president_denormalized.csv)]</local-name>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias>candidate_name</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_president_denormalized.csv_4BEE98C2AB6F4D7A8AF68C67C9672FBC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>party_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[party_code]</local-name>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias>party_code</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_president_denormalized.csv_4BEE98C2AB6F4D7A8AF68C67C9672FBC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>votes</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[votes (results_president_denormalized.csv)]</local-name>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias>votes</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_president_denormalized.csv_4BEE98C2AB6F4D7A8AF68C67C9672FBC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>col5</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[col5]</local-name>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias>col5</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_president_denormalized.csv_4BEE98C2AB6F4D7A8AF68C67C9672FBC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ballots_cast</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ballots_cast]</local-name>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias>ballots_cast</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_president_denormalized.csv_4BEE98C2AB6F4D7A8AF68C67C9672FBC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>col7</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[col7]</local-name>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias>col7</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_president_denormalized.csv_4BEE98C2AB6F4D7A8AF68C67C9672FBC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>col8</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[col8]</local-name>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias>col8</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_president_denormalized.csv_4BEE98C2AB6F4D7A8AF68C67C9672FBC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>timestamp</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[timestamp]</local-name>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias>timestamp</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_president_denormalized.csv_4BEE98C2AB6F4D7A8AF68C67C9672FBC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>pct_votes</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[pct_votes]</local-name>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias>pct_votes</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_president_denormalized.csv_4BEE98C2AB6F4D7A8AF68C67C9672FBC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[region]</local-name>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias>region</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_president_denormalized.csv_4BEE98C2AB6F4D7A8AF68C67C9672FBC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>province</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[province (results_president_denormalized.csv)]</local-name>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias>province</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_president_denormalized.csv_4BEE98C2AB6F4D7A8AF68C67C9672FBC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>municipality</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[municipality]</local-name>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias>municipality</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_president_denormalized.csv_4BEE98C2AB6F4D7A8AF68C67C9672FBC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>barangay</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[barangay]</local-name>
+            <parent-name>[results_president_denormalized.csv]</parent-name>
+            <remote-alias>barangay</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[results_president_denormalized.csv_4BEE98C2AB6F4D7A8AF68C67C9672FBC]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[ID_0]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[ID_1]' role='dimension' type='ordinal' />
+      <_.fcp.ObjectModelTableType.true...column caption='ph_provinces.shp' datatype='table' name='[__tableau_internal_object_id__].[ph_provinces.shp_D007E413F7D844659A3CE4C0CE8B8244]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='results_president_denormalized.csv' datatype='table' name='[__tableau_internal_object_id__].[results_president_denormalized.csv_4BEE98C2AB6F4D7A8AF68C67C9672FBC]' role='measure' type='quantitative' />
+      <column datatype='string' name='[candidate_name]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[contest_code]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[party_code]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[province (results_president_denormalized.csv)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[province (results_president_province_top.csv)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[province]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column-instance column='[candidate_name]' derivation='None' name='[none:candidate_name:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:candidate_name:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#ff0000'>
+              <bucket>&quot;DUTERTE, RODY (PDPLBN)&quot;</bucket>
+            </map>
+            <map to='#ff5500'>
+              <bucket>&quot;BINAY, JOJO (UNA)&quot;</bucket>
+            </map>
+            <map to='#ffff00'>
+              <bucket>&quot;ROXAS, MAR DAANG MATUWID (LP)&quot;</bucket>
+            </map>
+            <map to='#ffffff'>
+              <bucket>&quot;POE, GRACE (IND)&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Philippines&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='ph_provinces.shp' id='ph_provinces.shp_D007E413F7D844659A3CE4C0CE8B8244'>
+            <properties context=''>
+              <relation join='right' type='join'>
+                <clause type='join'>
+                  <expression op='='>
+                    <expression op='[ph_provinces.shp].[province]' />
+                    <expression op='[results_president_province_top.csv].[province]' />
+                  </expression>
+                </clause>
+                <relation connection='ogrdirect.1djaxz004pjoid0zoiey803058uo' name='ph_provinces.shp' table='[ph_provinces.shp]' type='table'>
+                  <columns>
+                    <column datatype='integer' name='ID_0' ordinal='0' />
+                    <column datatype='string' name='ISO' ordinal='1' />
+                    <column datatype='string' name='NAME_0' ordinal='2' />
+                    <column datatype='integer' name='ID_1' ordinal='3' />
+                    <column datatype='string' name='NAME_1' ordinal='4' />
+                    <column datatype='string' name='NL_NAME_1' ordinal='5' />
+                    <column datatype='string' name='VARNAME_1' ordinal='6' />
+                    <column datatype='string' name='TYPE_1' ordinal='7' />
+                    <column datatype='string' name='ENGTYPE_1' ordinal='8' />
+                    <column datatype='string' name='province' ordinal='9' />
+                    <column datatype='string' name='REGION' ordinal='10' />
+                    <column datatype='spatial' name='Geometry' ordinal='11' />
+                  </columns>
+                </relation>
+                <relation connection='textscan.0s9fvo21gfc0181ak3wjm1qk4jsr' name='results_president_province_top.csv' table='[results_president_province_top#csv]' type='table'>
+                  <columns character-set='UTF-8' header='yes' locale='en_PH' separator=','>
+                    <column datatype='integer' name='F1' ordinal='0' />
+                    <column datatype='string' name='province' ordinal='1' />
+                    <column datatype='string' name='candidate_name' ordinal='2' />
+                    <column datatype='integer' name='votes' ordinal='3' />
+                    <column datatype='real' name='rank' ordinal='4' />
+                  </columns>
+                </relation>
+              </relation>
+            </properties>
+          </object>
+          <object caption='results_president_denormalized.csv' id='results_president_denormalized.csv_4BEE98C2AB6F4D7A8AF68C67C9672FBC'>
+            <properties context=''>
+              <relation connection='textscan.1n0cbtv1bsvoah1bcxhz11ls1lx8' name='results_president_denormalized.csv' table='[results_president_denormalized#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_PH' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='contest_code' ordinal='1' />
+                  <column datatype='string' name='candidate_name' ordinal='2' />
+                  <column datatype='integer' name='party_code' ordinal='3' />
+                  <column datatype='integer' name='votes' ordinal='4' />
+                  <column datatype='integer' name='col5' ordinal='5' />
+                  <column datatype='integer' name='ballots_cast' ordinal='6' />
+                  <column datatype='integer' name='col7' ordinal='7' />
+                  <column datatype='integer' name='col8' ordinal='8' />
+                  <column datatype='datetime' name='timestamp' ordinal='9' />
+                  <column datatype='real' name='pct_votes' ordinal='10' />
+                  <column datatype='string' name='region' ordinal='11' />
+                  <column datatype='string' name='province' ordinal='12' />
+                  <column datatype='string' name='municipality' ordinal='13' />
+                  <column datatype='string' name='barangay' ordinal='14' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[province]' />
+              <expression op='[province (results_president_denormalized.csv)]' />
+            </expression>
+            <first-end-point object-id='ph_provinces.shp_D007E413F7D844659A3CE4C0CE8B8244' />
+            <second-end-point object-id='results_president_denormalized.csv_4BEE98C2AB6F4D7A8AF68C67C9672FBC' />
+          </relationship>
+        </relationships>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Presidential Ranking per Region'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='results_president_denormalized' name='federated.1arys4y1a7y9p518rfqon0ftpbqt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1arys4y1a7y9p518rfqon0ftpbqt'>
+            <column caption='Candidate Name' datatype='string' name='[candidate_name]' role='dimension' type='nominal' />
+            <column-instance column='[candidate_name]' derivation='None' name='[none:candidate_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[votes]' derivation='Sum' name='[rank:sum:votes:qk:7]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[candidate_name]' ordering-type='Field' rank-options='Competition,Descending' type='Rank' />
+            </column-instance>
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column-instance column='[votes]' derivation='Sum' name='[sum:votes:qk]' pivot='key' type='quantitative' />
+            <column caption='Votes' datatype='integer' name='[votes]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:candidate_name:nk]' value='96' />
+            <format attr='font-family' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:region:nk]' value='Roboto' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-family' value='Roboto' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:region:nk]' value='Roboto' />
+            <format attr='font-weight' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:candidate_name:nk]' value='bold' />
+            <format attr='font-weight' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:region:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]' num-steps='6' palette='red_10_0' type='interpolated' />
+            <encoding attr='size-bar' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[rank:sum:votes:qk:7]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[rank:sum:votes:qk:7]' num-steps='5' palette='blue_teal_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Roboto' />
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-family' value='Roboto' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='font-family' value='Roboto' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[rank:sum:votes:qk:7]' />
+              <tooltip column='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]' />
+              <text column='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[rank:sum:votes:qk:7]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878' fontname='Roboto'>Candidate Name:&#9;</run>
+                <run bold='true' fontname='Roboto'><![CDATA[<[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:candidate_name:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Roboto'>Region:&#9;</run>
+                <run bold='true' fontname='Roboto'><![CDATA[<[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:region:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Roboto'>Votes:&#9;</run>
+                <run bold='true' fontname='Roboto'><![CDATA[<[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Roboto'>Rank in Region:&#9;</run>
+                <run bold='true' fontname='Roboto'><![CDATA[<[federated.1arys4y1a7y9p518rfqon0ftpbqt].[rank:sum:votes:qk:7]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-family' value='Roboto' />
+                <format attr='font-weight' value='bold' />
+                <format attr='font-size' value='10' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-range-scope' value='table' />
+                <format attr='mark-labels-range-max' value='false' />
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:region:nk]</rows>
+        <cols>[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:candidate_name:nk]</cols>
+      </table>
+      <simple-id uuid='{307FFB47-CA7A-48E5-B3CE-00E366AA5A83}' />
+    </worksheet>
+    <worksheet name='Presidential Votes'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='results_president_denormalized' name='federated.1arys4y1a7y9p518rfqon0ftpbqt' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1arys4y1a7y9p518rfqon0ftpbqt'>
+            <column-instance column='[votes]' derivation='Sum' name='[sum:votes:qk]' pivot='key' type='quantitative' />
+            <column caption='Votes' datatype='integer' name='[votes]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='87' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#43a1e5' fontname='Roboto' fontsize='48'>&lt;</run>
+                <run bold='true' fontcolor='#43a1e5' fontname='Roboto' fontsize='48'>[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]</run>
+                <run bold='true' fontcolor='#43a1e5' fontname='Roboto' fontsize='48'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0E1C2183-2E30-4C20-A3FC-5CA94C9191AB}' />
+    </worksheet>
+    <worksheet name='Presidential Votes per Region'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Roboto Black'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='results_president_denormalized' name='federated.1arys4y1a7y9p518rfqon0ftpbqt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1arys4y1a7y9p518rfqon0ftpbqt'>
+            <column caption='Candidate Name' datatype='string' name='[candidate_name]' role='dimension' type='nominal' />
+            <column-instance column='[candidate_name]' derivation='None' name='[none:candidate_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[votes]' derivation='Sum' name='[pcto:sum:votes:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[votes]' derivation='Sum' name='[rank:sum:votes:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' rank-options='Competition,Descending' type='Rank' />
+            </column-instance>
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column-instance column='[votes]' derivation='Sum' name='[sum:votes:qk]' pivot='key' type='quantitative' />
+            <column caption='Votes' datatype='integer' name='[votes]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:region:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:candidate_name:nk]' value='69' />
+            <format attr='font-family' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]' value='Roboto' />
+            <format attr='text-align' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]' value='center' />
+            <format attr='font-family' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:region:nk]' value='Roboto' />
+            <format attr='font-family' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[pcto:sum:votes:qk]' value='Roboto' />
+            <format attr='text-align' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[pcto:sum:votes:qk]' value='center' />
+            <format attr='font-family' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[rank:sum:votes:qk]' value='Roboto' />
+            <format attr='text-align' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[rank:sum:votes:qk]' value='center' />
+            <format attr='font-size' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:candidate_name:nk]' value='8' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:candidate_name:nk]' value='68' />
+            <format attr='height-header' value='168' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-family' value='Roboto' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='8' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:region:nk]' value='Roboto' />
+            <format attr='font-family' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:candidate_name:nk]' value='Roboto' />
+            <format attr='font-family' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]' value='Roboto' />
+            <format attr='font-weight' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:candidate_name:nk]' value='bold' />
+            <format attr='font-weight' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:region:nk]' value='bold' />
+            <format attr='font-family' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[pcto:sum:votes:qk]' value='Roboto' />
+            <format attr='font-family' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[rank:sum:votes:qk]' value='Roboto' />
+            <format attr='font-size' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:candidate_name:nk]' value='8' />
+            <format attr='font-size' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:region:nk]' value='8' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]' max='2000000' min='0' palette='blue_teal_10_0' type='interpolated' />
+            <encoding attr='size-bar' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[pcto:sum:votes:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[pcto:sum:votes:qk]' max='2000000.0' min='0.0' palette='blue_teal_10_0' type='interpolated' />
+            <encoding attr='size-bar' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[rank:sum:votes:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[rank:sum:votes:qk]' max='2000000' min='0' palette='blue_teal_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='alternate-text' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]' value='Not specified' />
+            <format attr='display-alternate-text' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]' value='true' />
+            <format attr='omit-on-special' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]' value='true' />
+            <format attr='break-on-special' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]' value='true' />
+            <format attr='show-null-value-warning' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]' value='true' />
+            <format attr='alternate-text' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[pcto:sum:votes:qk]' value='Not specified' />
+            <format attr='display-alternate-text' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[pcto:sum:votes:qk]' value='true' />
+            <format attr='omit-on-special' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[pcto:sum:votes:qk]' value='true' />
+            <format attr='break-on-special' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[pcto:sum:votes:qk]' value='true' />
+            <format attr='show-null-value-warning' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[pcto:sum:votes:qk]' value='true' />
+            <format attr='alternate-text' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[rank:sum:votes:qk]' value='Not specified' />
+            <format attr='display-alternate-text' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[rank:sum:votes:qk]' value='true' />
+            <format attr='omit-on-special' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[rank:sum:votes:qk]' value='true' />
+            <format attr='break-on-special' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[rank:sum:votes:qk]' value='true' />
+            <format attr='show-null-value-warning' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[rank:sum:votes:qk]' value='true' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-family' value='Roboto' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]' />
+              <tooltip column='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[rank:sum:votes:qk]' />
+              <tooltip column='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[pcto:sum:votes:qk]' />
+              <text column='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878' fontname='Roboto'>Candidate Name:&#9;</run>
+                <run bold='true' fontname='Roboto'><![CDATA[<[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:candidate_name:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Roboto'>Region:&#9;</run>
+                <run bold='true' fontname='Roboto'><![CDATA[<[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:region:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Roboto'>Votes:&#9;</run>
+                <run bold='true' fontcolor='#000000' fontname='Roboto'><![CDATA[<[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Roboto'>% of Total Votes along Table (Across):	</run>
+                <run bold='true' fontname='Roboto'><![CDATA[<[federated.1arys4y1a7y9p518rfqon0ftpbqt].[pcto:sum:votes:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Roboto'>Rank of Votes along Table (Across):	</run>
+                <run bold='true' fontname='Roboto'><![CDATA[<[federated.1arys4y1a7y9p518rfqon0ftpbqt].[rank:sum:votes:qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-family' value='Roboto' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows total='true'>[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:region:nk]</rows>
+        <cols total='true'>[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:candidate_name:nk]</cols>
+        <percentages enabled='false' mode='column' />
+        <tooltip-style tooltip-mode='sticky' />
+      </table>
+      <simple-id uuid='{A0E0C64B-32B9-4DCF-994F-54CA3E156EAD}' />
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Ranking_President' name='federated.0x9jihg1wlalcq0zin0pj0vn5lx4' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0x9jihg1wlalcq0zin0pj0vn5lx4'>
+            <column datatype='string' name='[candidate_name]' role='dimension' type='nominal' />
+            <column-instance column='[candidate_name]' derivation='None' name='[none:candidate_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[province (results_president_province_top.csv)]' derivation='None' name='[none:province (results_president_province_top.csv):nk]' pivot='key' type='nominal' />
+            <column-instance column='[province]' derivation='None' name='[none:province:nk]' pivot='key' type='nominal' />
+            <column datatype='string' name='[province (results_president_province_top.csv)]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='string' name='[province]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0x9jihg1wlalcq0zin0pj0vn5lx4].[Longitude (generated)]' field-type='quantitative' max='14190145.319193374' min='13074874.795930868' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0x9jihg1wlalcq0zin0pj0vn5lx4].[Latitude (generated)]' field-type='quantitative' max='2923294.8528371598' min='536274.39890076395' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-family' field='[federated.0x9jihg1wlalcq0zin0pj0vn5lx4].[none:province:nk]' value='Roboto' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.0x9jihg1wlalcq0zin0pj0vn5lx4].[none:province:nk]' value='Roboto' />
+            <format attr='font-size' field='[federated.0x9jihg1wlalcq0zin0pj0vn5lx4].[none:province:nk]' value='8' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-family' value='Roboto' />
+          </style-rule>
+          <style-rule element='legend-title'>
+            <format attr='text-align' value='right' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.0x9jihg1wlalcq0zin0pj0vn5lx4].[none:candidate_name:nk]' />
+              <text column='[federated.0x9jihg1wlalcq0zin0pj0vn5lx4].[none:province:nk]' />
+              <lod column='[federated.0x9jihg1wlalcq0zin0pj0vn5lx4].[none:province (results_president_province_top.csv):nk]' />
+              <geometry column='[federated.0x9jihg1wlalcq0zin0pj0vn5lx4].[Geometry (generated)]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>candidate_name:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0x9jihg1wlalcq0zin0pj0vn5lx4].[none:candidate_name:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>province:&#9;</run>
+                <run bold='true'><![CDATA[<[federated.0x9jihg1wlalcq0zin0pj0vn5lx4].[none:province:nk]>]]></run>
+                <run>&#10;Number of votes: </run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Rank: </run>
+              </formatted-text>
+            </customized-tooltip>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.0x9jihg1wlalcq0zin0pj0vn5lx4].[none:province:nk]</run>
+                <run>&gt;</run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-family' value='Roboto' />
+                <format attr='font-size' value='8' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0x9jihg1wlalcq0zin0pj0vn5lx4].[Latitude (generated)]</rows>
+        <cols>[federated.0x9jihg1wlalcq0zin0pj0vn5lx4].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{F5F86263-CF89-42B9-A3D0-F91E8417FF20}' />
+    </worksheet>
+    <worksheet name='VP Votes per Region'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontname='Roboto Black'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='results_vice-president_denormalized' name='federated.0bi9uee1gi3q6h1gzjjxb188vpeb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bi9uee1gi3q6h1gzjjxb188vpeb'>
+            <column caption='Candidate Name' datatype='string' name='[candidate_name]' role='dimension' type='nominal' />
+            <column-instance column='[candidate_name]' derivation='None' name='[none:candidate_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[region]' derivation='None' name='[none:region:nk]' pivot='key' type='nominal' />
+            <column-instance column='[votes]' derivation='Sum' name='[pcto:sum:votes:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[votes]' derivation='Sum' name='[rank:sum:votes:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' rank-options='Competition,Descending' type='Rank' />
+            </column-instance>
+            <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+            <column-instance column='[votes]' derivation='Sum' name='[sum:votes:qk]' pivot='key' type='quantitative' />
+            <column caption='Votes' datatype='integer' name='[votes]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='height-header' value='168' />
+            <format attr='height' field='[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[none:candidate_name:nk]' value='56' />
+          </style-rule>
+          <style-rule element='field-labels'>
+            <format attr='font-family' value='Roboto' />
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-weight' field='[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[none:candidate_name:nk]' value='bold' />
+            <format attr='font-weight' field='[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[none:region:nk]' value='bold' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[sum:votes:qk]' max='2000000' min='0' type='interpolated' />
+            <encoding attr='color' field='[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[pcto:sum:votes:qk:2]' max='2000000' min='0' type='interpolated' />
+            <encoding attr='color' field='[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[rank:sum:votes:qk]' max='2000000' min='0' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='font-family' value='Roboto' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[sum:votes:qk]' />
+              <tooltip column='[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[pcto:sum:votes:qk:2]' />
+              <tooltip column='[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[rank:sum:votes:qk]' />
+              <text column='[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[sum:votes:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#000000' fontname='Roboto'>Candidate Name:&#9;</run>
+                <run bold='true' fontcolor='#000000' fontname='Roboto'><![CDATA[<[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[none:candidate_name:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#000000' fontname='Roboto'>Region:&#9;</run>
+                <run bold='true' fontcolor='#000000' fontname='Roboto'><![CDATA[<[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[none:region:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#000000' fontname='Roboto'>Votes:&#9;</run>
+                <run bold='true' fontcolor='#000000' fontname='Roboto'><![CDATA[<[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[sum:votes:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#000000' fontname='Roboto'>% of Total Votes along Table (Across):	</run>
+                <run bold='true' fontcolor='#000000' fontname='Roboto'><![CDATA[<[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[pcto:sum:votes:qk:2]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#000000' fontname='Roboto'>Rank of Votes along Table (Across):	</run>
+                <run bold='true' fontcolor='#000000' fontname='Roboto'><![CDATA[<[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[rank:sum:votes:qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='cell'>
+                <format attr='vertical-align' value='center' />
+                <format attr='text-align' value='center' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-family' value='Roboto' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='has-stroke' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows total='true'>[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[none:region:nk]</rows>
+        <cols total='true'>[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[none:candidate_name:nk]</cols>
+        <percentages enabled='false' mode='column' />
+        <tooltip-style tooltip-mode='sticky' />
+      </table>
+      <simple-id uuid='{DA14A85F-16F2-49CF-90CE-2135C1E8E463}' />
+    </worksheet>
+    <worksheet name='Vice Presidential'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='results_vice-president_denormalized' name='federated.0bi9uee1gi3q6h1gzjjxb188vpeb' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0bi9uee1gi3q6h1gzjjxb188vpeb'>
+            <column-instance column='[votes]' derivation='Sum' name='[sum:votes:qk]' pivot='key' type='quantitative' />
+            <column caption='Votes' datatype='integer' name='[votes]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='87' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[sum:votes:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontcolor='#43a1e5' fontname='Roboto' fontsize='48'>&lt;</run>
+                <run bold='true' fontcolor='#43a1e5' fontname='Roboto' fontsize='48'>[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[sum:votes:qk]</run>
+                <run bold='true' fontcolor='#43a1e5' fontname='Roboto' fontsize='48'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{92EDE028-59AC-4E48-AAE4-62E1DAFBC601}' />
+    </worksheet>
+    <worksheet name='Votes per VP candidate'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='results_vice-president_denormalized' name='federated.0bi9uee1gi3q6h1gzjjxb188vpeb' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0bi9uee1gi3q6h1gzjjxb188vpeb'>
+            <column caption='Candidate Name' datatype='string' name='[candidate_name]' role='dimension' type='nominal' />
+            <column-instance column='[candidate_name]' derivation='None' name='[none:candidate_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[votes]' derivation='Sum' name='[pcto:sum:votes:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[votes]' derivation='Sum' name='[sum:votes:qk]' pivot='key' type='quantitative' />
+            <column caption='Votes' datatype='integer' name='[votes]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[none:candidate_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[sum:votes:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[sum:votes:qk]' value='63' />
+            <format attr='height' field='[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[pcto:sum:votes:qk]' value='33' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[none:candidate_name:nk]' value='40' />
+            <format attr='font-family' data-class='total' scope='cols' value='Roboto' />
+            <format attr='font-family' data-class='subtotal' scope='cols' value='Roboto' />
+            <format attr='text-format' field='[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[sum:votes:qk]' value='n#,##0,,.0M;-#,##0,,.0M' />
+            <format attr='text-format' field='[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[pcto:sum:votes:qk]' value='p0.0%' />
+            <format attr='font-size' field='[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[none:candidate_name:nk]' value='10' />
+            <format attr='font-size' data-class='subtotal' scope='cols' value='10' />
+            <format attr='font-size' data-class='subtotal' scope='rows' value='10' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[none:candidate_name:nk]' value='216' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' scope='cols' value='Roboto' />
+            <format attr='font-size' field='[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[none:candidate_name:nk]' value='10' />
+            <format attr='font-size' scope='cols' value='10' />
+            <format attr='font-size' scope='rows' value='10' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='font-family' value='Roboto' />
+            <format attr='font-size' value='10' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-family' value='Roboto' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='font-family' value='Roboto' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <tooltip column='[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[sum:votes:qk]' />
+              <tooltip column='[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[pcto:sum:votes:qk]' />
+              <text column='[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[sum:votes:qk]' />
+              <text column='[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[pcto:sum:votes:qk]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878'>Candidate Name: </run>
+                <run bold='true' fontcolor='#787878'><![CDATA[<[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[none:candidate_name:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>Votes: </run>
+                <run bold='true' fontcolor='#787878'><![CDATA[<[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[sum:votes:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878'>% of Total Votes along Table (Down): </run>
+                <run bold='true' fontcolor='#787878'><![CDATA[<[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[pcto:sum:votes:qk]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-range-min' value='false' />
+                <format attr='mark-labels-mode' value='highlight' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#75a1c7' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='441' />
+                <format attr='maxwidth' value='441' />
+                <format attr='minheight' value='246' />
+                <format attr='maxheight' value='246' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[none:candidate_name:nk]</rows>
+        <cols>[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[sum:votes:qk]</cols>
+      </table>
+      <simple-id uuid='{7EE42EF5-20A0-446F-B7EB-44C1FD27342D}' />
+    </worksheet>
+    <worksheet name='Votes per presidential candidate'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='results_president_denormalized' name='federated.1arys4y1a7y9p518rfqon0ftpbqt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1arys4y1a7y9p518rfqon0ftpbqt'>
+            <column caption='Candidate Name' datatype='string' name='[candidate_name]' role='dimension' type='nominal' />
+            <column-instance column='[candidate_name]' derivation='None' name='[none:candidate_name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[votes]' derivation='Sum' name='[pcto:sum:votes:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Columns' type='PctTotal' />
+            </column-instance>
+            <column-instance column='[votes]' derivation='Sum' name='[sum:votes:qk]' pivot='key' type='quantitative' />
+            <column caption='Votes' datatype='integer' name='[votes]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:candidate_name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]' value='49' />
+            <format attr='height' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[pcto:sum:votes:qk:2]' value='49' />
+            <encoding attr='space' class='0' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]' field-type='quantitative' max='20000000' min='0' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:candidate_name:nk]' value='41' />
+            <format attr='font-family' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:candidate_name:nk]' value='Roboto' />
+            <format attr='font-family' data-class='total' scope='cols' value='Roboto' />
+            <format attr='font-family' data-class='subtotal' scope='cols' value='Roboto' />
+            <format attr='text-format' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]' value='n#,##0,,.0M;-#,##0,,.0M' />
+            <format attr='text-format' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[pcto:sum:votes:qk:2]' value='p0.0%' />
+            <format attr='text-format' data-class='total' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]' value='n#,##0,,.0M;-#,##0,,.0M' />
+            <format attr='font-size' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]' value='9' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:candidate_name:nk]' value='208' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:candidate_name:nk]' value='Roboto' />
+            <format attr='font-family' scope='cols' value='Roboto' />
+            <format attr='font-size' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:candidate_name:nk]' value='9' />
+            <format attr='font-size' field='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]' value='9' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+            <format attr='font-family' value='Roboto' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-family' value='Roboto' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='font-family' value='Roboto' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]' />
+              <text column='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[pcto:sum:votes:qk:2]' />
+            </encodings>
+            <customized-tooltip>
+              <formatted-text>
+                <run fontcolor='#787878' fontname='Roboto'>Candidate Name:&#9;</run>
+                <run bold='true' fontname='Roboto'><![CDATA[<[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:candidate_name:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Roboto'>Votes:&#9;</run>
+                <run bold='true' fontname='Roboto'><![CDATA[<[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]>]]></run>
+                <run>Æ&#10;</run>
+                <run fontcolor='#787878' fontname='Roboto'>% of Total Votes along Table (Down):	</run>
+                <run bold='true' fontname='Roboto'><![CDATA[<[federated.1arys4y1a7y9p518rfqon0ftpbqt].[pcto:sum:votes:qk:2]>]]></run>
+                <run>Æ&#10;</run>
+              </formatted-text>
+            </customized-tooltip>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-range-min' value='false' />
+                <format attr='mark-labels-mode' value='highlight' />
+                <format attr='mark-color' value='#75a1c7' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='344' />
+                <format attr='maxwidth' value='344' />
+                <format attr='minheight' value='246' />
+                <format attr='maxheight' value='246' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:candidate_name:nk]</rows>
+        <cols>[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]</cols>
+      </table>
+      <simple-id uuid='{02D7DEDD-30CE-485A-BC45-5364A11A7610}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 2'>
+      <style />
+      <size maxheight='2000' maxwidth='1000' minheight='2000' minwidth='1000' sizing-mode='fixed' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='99200' id='10' param='horz' w='98400' x='800' y='400'>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='99200' id='8' w='58300' x='800' y='400'>
+              <zone h='15400' id='5' name='Votes per presidential candidate' show-title='false' w='58300' x='800' y='5350'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='4950' id='3' name='Presidential Votes' show-title='false' w='58300' x='800' y='400'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='78850' id='7' name='Presidential Votes per Region' w='58300' x='800' y='20750'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' fixed-size='401' h='99200' id='9' is-fixed='true' param='vert' w='40100' x='59100' y='400'>
+              <zone _.fcp.SetMembershipControl.false...type='highlighter' _.fcp.SetMembershipControl.true...type-v2='highlighter' h='2500' id='12' name='Presidential Votes per Region' param='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:candidate_name:nk]' w='40100' x='59100' y='400'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='42400' id='17' name='Sheet 3' show-title='false' w='40100' x='59100' y='2900'>
+                <layout-cache minheight='201' minwidth='201' type-h='scalable' type-w='scalable' />
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' fixed-size='1078' h='54300' id='11' is-fixed='true' name='Presidential Votes per Region' pane-specification-id='0' param='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]' w='40100' x='59100' y='45300'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='2250' id='6' w='24100' x='36500' y='2200'>
+          <formatted-text>
+            <run fontname='Roboto' fontsize='24'>total votes cast</run>
+          </formatted-text>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='5000' id='18' name='Sheet 3' pane-specification-id='0' param='[federated.0x9jihg1wlalcq0zin0pj0vn5lx4].[none:candidate_name:nk]' show-title='false' w='22200' x='75200' y='3650' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='900' minheight='900' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='16' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='99200' id='15' param='vert' w='98400' x='800' y='400'>
+                <zone fixed-size='91' h='4950' id='3' is-fixed='true' name='Presidential Votes' show-title='false' w='69100' x='800' y='400'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' forceUpdate='true' h='2250' id='6' w='24100' x='36500' y='2200'>
+                  <formatted-text>
+                    <run fontname='Roboto' fontsize='24'>total votes cast</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='15400' id='5' is-fixed='true' name='Votes per presidential candidate' show-title='false' w='69100' x='800' y='5350'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='highlighter' _.fcp.SetMembershipControl.true...type-v2='highlighter' h='2500' id='12' name='Presidential Votes per Region' param='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:candidate_name:nk]' w='29300' x='69900' y='400'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='78850' id='7' is-fixed='true' name='Presidential Votes per Region' w='69100' x='800' y='20750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone _.fcp.SetMembershipControl.false...type='color' _.fcp.SetMembershipControl.true...type-v2='color' h='3050' id='11' name='Presidential Votes per Region' pane-specification-id='0' param='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]' w='29300' x='69900' y='2900'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8A32CB22-6DE8-4556-BA3E-45AD15D112F7}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='114'>
+    <window class='worksheet' name='Presidential Votes'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{131AC15D-B69F-4D7D-BE69-18490A7BDF3B}' />
+    </window>
+    <window class='worksheet' name='Vice Presidential'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{45785991-F445-4D2E-9528-45DA78C6624C}' />
+    </window>
+    <window class='worksheet' name='Votes per presidential candidate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B17ACC18-5901-4C83-9485-DE2D4EE68C7A}' />
+    </window>
+    <window class='worksheet' name='Votes per VP candidate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9D157D1B-3DD4-479B-BD91-D15CC5D1379F}' />
+    </window>
+    <window class='worksheet' name='Presidential Votes per Region'>
+      <cards>
+        <edge name='left'>
+          <strip size='139'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[sum:votes:qk]' type='color' />
+            <card param='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[none:candidate_name:nk]' type='highlighter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{CBE60ECB-C991-45EF-98A0-EB3D2309B1DD}' />
+    </window>
+    <window class='worksheet' name='VP Votes per Region'>
+      <cards>
+        <edge name='left'>
+          <strip size='139'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0bi9uee1gi3q6h1gzjjxb188vpeb].[sum:votes:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{24031533-64EE-4B86-A331-F807E46C24A9}' />
+    </window>
+    <window class='worksheet' name='Presidential Ranking per Region'>
+      <cards>
+        <edge name='left'>
+          <strip size='100'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='100'>
+            <card pane-specification-id='0' param='[federated.1arys4y1a7y9p518rfqon0ftpbqt].[rank:sum:votes:qk:7]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E327259B-FF94-416A-AD68-F6CB633FC51D}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0x9jihg1wlalcq0zin0pj0vn5lx4].[none:candidate_name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{5A1737E0-1DC1-404E-8CC2-E7BD47AE1650}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='Presidential Votes' />
+        <viewpoint name='Presidential Votes per Region' />
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+          <floating-toolbar-visibility value='1' />
+          <map-scale-visibility value='0' />
+          <default-map-tool-selection tool='1' />
+          <default-map-unit-selection mapunit='1' />
+        </viewpoint>
+        <viewpoint name='Votes per presidential candidate' />
+      </viewpoints>
+      <active id='17' />
+      <simple-id uuid='{1C40CAD5-F6D8-492A-8938-EFEAF2997E6F}' />
+    </window>
+  </windows>
+</workbook>
